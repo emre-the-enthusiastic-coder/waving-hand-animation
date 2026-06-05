@@ -2,163 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>👋 Waving Hand CSS Animation</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: #0d1117;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      color: #e6edf3;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
-      margin-bottom: 1rem;
-      line-height: 1.4;
-    }
-
-    .subtitle {
-      font-size: 1rem;
-      color: #8b949e;
-      margin-bottom: 3rem;
-    }
-
-    .demo-section {
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 12px;
-      padding: 2rem 3rem;
-      margin-bottom: 2rem;
-      width: 100%;
-      max-width: 600px;
-    }
-
-    .demo-section p {
-      font-size: 0.9rem;
-      color: #8b949e;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .big-wave {
-      font-size: 5rem;
-      display: inline-block;
-    }
-
-    .inline-example {
-      font-size: 1.4rem;
-      line-height: 2;
-    }
-
-    /* =====================
-       WAVING HAND ANIMATION
-       ===================== */
-    .waving-hand {
-      animation-name: wave-animation;
-      animation-duration: 2.5s;
-      animation-iteration-count: infinite;
-      transform-origin: 70% 70%;
-      display: inline-block;
-    }
-
-    @keyframes wave-animation {
-      0%   { transform: rotate(  0.0deg) }
-      15%  { transform: rotate( 14.0deg) }  /* tweak these to change intensity */
-      30%  { transform: rotate( -8.0deg) }
-      40%  { transform: rotate( 14.0deg) }
-      50%  { transform: rotate( -4.0deg) }
-      60%  { transform: rotate( 10.0deg) }
-      70%  { transform: rotate(  0.0deg) }  /* pause for the last 30% */
-      100% { transform: rotate(  0.0deg) }
-    }
-    /* ===================== */
-
-    .code-block {
-      background: #0d1117;
-      border: 1px solid #30363d;
-      border-radius: 8px;
-      padding: 1.5rem;
-      text-align: left;
-      font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace;
-      font-size: 0.85rem;
-      color: #c9d1d9;
-      white-space: pre;
-      overflow-x: auto;
-      line-height: 1.6;
-      margin-top: 1rem;
-      max-width: 600px;
-      width: 100%;
-    }
-
-    .footer {
-      margin-top: 3rem;
-      font-size: 0.85rem;
-      color: #484f58;
-    }
-
-    .footer a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Hand Waving👋</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>Waving Hand <span class="waving-hand">👋</span> CSS Animation</h1>
-  <p class="subtitle">A pure CSS animation — just add the class and it works anywhere.</p>
+  <span>Example about Waving Hand Emojis, using CSS</span>
+  <br />
+  <br />
 
-  <div class="demo-section">
-    <p>Standalone</p>
-    <span class="waving-hand big-wave">👋</span>
-  </div>
+  <span class="waving-hand">👋</span>
 
-  <div class="demo-section">
-    <p>Inline inside text</p>
-    <p class="inline-example">You can also place these hands inline <span class="waving-hand">👋</span> this works very well</p>
-  </div>
-
-  <div class="code-block">.waving-hand {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-@keyframes wave-animation {
-  0%   { transform: rotate(  0.0deg) }
-  15%  { transform: rotate( 14.0deg) }
-  30%  { transform: rotate( -8.0deg) }
-  40%  { transform: rotate( 14.0deg) }
-  50%  { transform: rotate( -4.0deg) }
-  60%  { transform: rotate( 10.0deg) }
-  70%  { transform: rotate(  0.0deg) }
-  100% { transform: rotate(  0.0deg) }
-}</div>
-
-  <div class="footer">
-    Original by <a href="https://codepen.io/einargudnig/pen/YzNeZOG" target="_blank">@einargudnig on CodePen</a>
-    &nbsp;·&nbsp;
-    Shared by <a href="https://github.com/emre-the-enthusiastic-coder" target="_blank">emre-the-enthusiastic-coder</a>
-  </div>
+  <!-- There is also the possipility of having the hands in text -->
+  <h1>You can also place these hands inline<span class="waving-hand">👋</span>  this works very well</h1>
 
 </body>
 </html>
